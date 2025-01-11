@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Powered Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Voice-Powered Calculator</h1>
+        <div class="calculator-container">
+            <input type="text" id="result" disabled placeholder="Your result will appear here">
+            <button id="voice-btn">🎙️ Speak</button>
+            <div class="controls">
+                <div class="control-item">
+                    <label for="volume-control">Volume:</label>
+                    <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+                </div>
+                <div class="control-item">
+                    <label for="speed-control">Speed:</label>
+                    <input type="range" id="speed-control" min="0.5" max="2" step="0.1" value="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
